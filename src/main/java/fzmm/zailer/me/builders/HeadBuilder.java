@@ -6,7 +6,7 @@ import fzmm.zailer.me.client.logic.FzmmHistory;
 import fzmm.zailer.me.utils.TagsConstant;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
-import net.minecraft.item.SkullItem;
+import net.minecraft.item.PlayerHeadItem;
 import net.minecraft.nbt.*;
 import net.minecraft.util.math.random.Random;
 import org.jetbrains.annotations.Nullable;
