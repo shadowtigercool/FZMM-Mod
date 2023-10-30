@@ -35,7 +35,7 @@ public class ConverterArrayToUuidTab implements IScreenTab {
             Random random = Random.create();
             for (var element : this.textBoxArray) {
                 element.setText(String.valueOf(random.nextInt()));
-                uuidField.setCursor(0, true); // Assuming the second argument is a boolean
+                element.setCursor(0, true);
             }
         });
 
