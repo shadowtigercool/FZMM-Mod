@@ -9,7 +9,7 @@ import fzmm.zailer.me.client.FzmmClient;
 import fzmm.zailer.me.config.FzmmConfig;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.SkullItem;
+import net.minecraft.item.PlayerHeadItem;
 import net.minecraft.nbt.NbtCompound;
 import net.minecraft.nbt.NbtHelper;
 import net.minecraft.util.math.MathHelper;
@@ -131,7 +131,7 @@ public class HeadUtils {
         assert client.player != null;
 
         NbtCompound nbt = stack.getOrCreateNbt();
-        NbtCompound skullOwnerTag = nbt.getCompound(SkullItem.SKULL_OWNER_KEY);
+        NbtCompound skullOwnerTag = nbt.getCompound(PlayerHeadItem.SKULL_OWNER_KEY);
         GameProfile gameProfile = NbtHelper.toGameProfile(skullOwnerTag);
         if (gameProfile == null)
             return Optional.empty();
