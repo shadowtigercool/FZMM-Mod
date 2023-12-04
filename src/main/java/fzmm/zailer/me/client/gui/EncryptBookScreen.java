@@ -43,6 +43,8 @@ public class EncryptBookScreen extends BaseFzmmScreen implements IMementoScreen 
     private TextFieldWidget titleField;
     private SliderWidget maxMessageLengthField;
 
+    
+
     public EncryptBookScreen(@Nullable Screen parent) {
         super("encrypt_book", "encryptbook", parent);
     }
@@ -129,7 +131,7 @@ public class EncryptBookScreen extends BaseFzmmScreen implements IMementoScreen 
     public void restoreMemento(IMementoObject mementoObject) {
         EncryptBookMemento memento = (EncryptBookMemento) mementoObject;
         this.seedField.setText(String.valueOf(memento.seed));
-        this.seedField.setCursor(Position.ZERO);
+        this.seedField.setCursorPosition(0);
         this.messageField.setText(memento.message);
         this.messageField.setCursor(0);
         this.authorField.setText(memento.author);
