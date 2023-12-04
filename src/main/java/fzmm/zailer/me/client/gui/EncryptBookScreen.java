@@ -132,14 +132,13 @@ public class EncryptBookScreen extends BaseFzmmScreen implements IMementoScreen 
         this.seedField.setText(String.valueOf(memento.seed));
         this.messageField.setCursorPosition(0);
         this.messageField.setText(memento.message);
-        this.messageField.setCursor(0);
+        this.authorField.setCursorPosition(0);
         this.authorField.setText(memento.author);
-        this.authorField.setCursor(0);
+        this.paddingCharactersField.setCursorPosition(0);
         this.paddingCharactersField.setText(memento.paddingCharacters);
-        this.paddingCharactersField.setCursor(0);
         this.maxMessageLengthField.setFromDiscreteValue(memento.maxMessageLength);
+        this.titleField.setCursorPosition(0);
         this.titleField.setText(memento.title);
-        this.titleField.setCursor(0);
     }
 
     private record EncryptBookMemento(int seed, String message, String author, String paddingCharacters,
