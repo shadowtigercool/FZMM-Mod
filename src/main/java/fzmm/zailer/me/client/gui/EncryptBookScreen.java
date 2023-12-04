@@ -131,7 +131,7 @@ public class EncryptBookScreen extends BaseFzmmScreen implements IMementoScreen 
     public void restoreMemento(IMementoObject mementoObject) {
         EncryptBookMemento memento = (EncryptBookMemento) mementoObject;
         this.seedField.setText(String.valueOf(memento.seed));
-        this.seedField.setCursorPosition(0);
+        this.messageField.setCursorPosition(0);
         this.messageField.setText(memento.message);
         this.messageField.setCursor(0);
         this.authorField.setText(memento.author);
