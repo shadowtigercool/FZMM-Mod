@@ -1,6 +1,6 @@
 package fzmm.zailer.me.client.gui;
 
-
+import net.minecraft.client.gui.widget.TextFieldWidget;
 import fzmm.zailer.me.client.FzmmClient;
 import fzmm.zailer.me.client.gui.components.SliderWidget;
 import fzmm.zailer.me.client.gui.components.row.ButtonRow;
@@ -18,7 +18,6 @@ import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.gui.screen.ConfirmLinkScreen;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.gui.widget.ButtonWidget;
-import net.minecraft.client.gui.widget.TextFieldWidget;
 import net.minecraft.util.Util;
 import org.jetbrains.annotations.Nullable;
 
